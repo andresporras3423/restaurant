@@ -1,4 +1,4 @@
-export class foodItem{
+export default class foodItem{
     constructor(name, price, image, description){
         this.name = name;
         this.price = price;

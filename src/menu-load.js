@@ -14,14 +14,27 @@ export default function homeLoad(){
         new foodItem("Shrimp bath","1100","shrimp-bath","The same breads embracing inside some delicious and crunchy shrimp breaded in coconut, accompanied with mezclum, radish, cape gooseberry sauce and coconut milk."),
         new foodItem("Sweet banana","1800","sweet-banana","Ripe banana slices that wrap an incredible mix of Kani Osaki, Wakame, Japanese mayonnaise and togarashi (a spectacular mix of spices), served in a bath with house molasses.")],
         loadDivMenu(){
+            this.divMenu.className="item-style";
             this.divContent.appendChild(this.divMenu);
-            this.loadHead();
-            this.loadImage();
-            this.loadParagraph();
+            this.loadItems();
         },
         loadItems(){
-            this.h3.innerText="Sushitaki";
-            this.divHome.appendChild(this.h3);
+            this.foodItems.forEach((item)=>{
+               let divItem = document.createElement("div");
+               let name = document.createElement("h4");
+               name.innerText = item.name;
+               let price = document.createElement("p");
+               price.innerText = item.price;
+               let description = document.createElement("p"); 
+               description.innerText = item.description;
+               let image = document.createElement("img");
+               image.src=`../data/sushi-images/${item.image}.jpg`;
+               divItem.appendChild(name);
+               divItem.appendChild(price);
+               divItem.appendChild(description);
+               divItem.appendChild(image);
+               this.divMenu.appendChild(divItem);
+            });
         }
     }
 };

@@ -1,5 +1,8 @@
-.item.style{
+.item-style{
     display: flex;
     flex-wrap: wrap;
+}
+
+.item-style > * {
     flex-basis: 50%;
 }
