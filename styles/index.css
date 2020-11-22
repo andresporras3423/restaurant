@@ -22,4 +22,24 @@
 
 .cursor-pointer{
     cursor: pointer;
-  }
+}
+
+.div-home-styles{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.div-contact-styles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.div-contact-styles > * {
+    grid-column: 2;
+}
+
+.margin-form-items > *{
+    margin: 5px;
+}
