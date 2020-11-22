@@ -14,7 +14,8 @@ export default function homeLoad(){
         new foodItem("Shrimp bath","1100","shrimp-bath","The same breads embracing inside some delicious and crunchy shrimp breaded in coconut, accompanied with mezclum, radish, cape gooseberry sauce and coconut milk."),
         new foodItem("Sweet banana","1800","sweet-banana","Ripe banana slices that wrap an incredible mix of Kani Osaki, Wakame, Japanese mayonnaise and togarashi (a spectacular mix of spices), served in a bath with house molasses.")],
         loadDivMenu(){
-            this.divMenu.className="item-style margin-menu";
+            this.divMenu.id="div1";
+            this.divMenu.className="item-style margin-menu d-none";
             this.divContent.appendChild(this.divMenu);
             this.loadItems();
         },

@@ -6,6 +6,7 @@ export default function homeLoad(){
         image : document.createElement("img"),
         p : document.createElement("p"),
         loadDivHome(){
+            this.divHome.id="div0";
             this.divContent.appendChild(this.divHome);
             this.loadHead();
             this.loadImage();

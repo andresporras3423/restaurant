@@ -6,6 +6,8 @@ export default function contactLoad(){
         paragraphContact : document.createElement("p"),
         formContact : document.createElement("form"),
         loadDivContact(){
+            this.divContact.id="div2";
+            this.divContact.classList.add("d-none");
             this.divContent.appendChild(this.divContact);
             this.divContact.appendChild(this.headContact);
             this.divContact.appendChild(this.paragraphContact);
@@ -46,8 +48,6 @@ export default function contactLoad(){
             textArea.placeholder="Your message";
             this.formContact.appendChild(message);
             this.formContact.appendChild(textArea);
-            // textArea.rows=3;
-            // textArea.cols=3;
         },
         loadFormSubmit(){
             let inputSubmit = document.createElement("input");

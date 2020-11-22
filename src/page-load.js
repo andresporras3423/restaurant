@@ -7,11 +7,13 @@ export default function pageLoad(){
             debugger;
             this.nav.className="navbar navbar-expand-lg navbar-dark bg-dark";
             this.divNav.className="navbar-nav";
-            ["Home", "Menu", "Content"].forEach((item, index)=>{
+            ["Home", "Menu", "Contact"].forEach((item, index)=>{
                 let a = document.createElement("a");
                 a.text = item;
-                if(index==0) a.className = "nav-item nav-link active";
-                else a.className = "nav-item nav-link";
+                if(index==0) a.className = "tab-event nav-item nav-link cursor-pointer active";
+                else a.className = "tab-event nav-item nav-link cursor-pointer";
+                a.id=`tab${index}`;
+                a.onclick="updateContent()";
                 this.divNav.appendChild(a);
             });
             this.nav.appendChild(this.divNav);
