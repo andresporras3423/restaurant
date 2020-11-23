@@ -8,11 +8,13 @@ Second JavaScript Microverse Project By Oscar Russi
 # What it does
 
 - The website was built with JavaScript and Webpack
-- The page has a tab that allow user to navigate through the three section of the page: home, menu and contact.
-- When the page load it shows the content of the home tab, it has a head, a paragraph with a short description of the restaurant, and an image.
+- The page has a tab that allows the user to navigate through the three sections of the page: home, menu, and contact.
+- When the page load it shows the content of the Home tab, it has a head, a paragraph with a short description of the restaurant, and an image.
 - Tab Menu shows the list of food offered by the restaurant.
-- Tab contact include a form to send a message to the restaurant.
+- Tab contact includes a form to send a message to the restaurant.
+- Create a class for the food items.
 - The project uses Bootstrap for styling.
+
 
 # Build with
 
