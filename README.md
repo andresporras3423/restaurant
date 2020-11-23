@@ -7,7 +7,7 @@ Second JavaScript Microverse Project By Oscar Russi
 
 # What it does
 
-- The website is a SPA build with JavaScript and Webpack
+- The website was built with JavaScript and Webpack
 - The page has a tab that allow user to navigate through the three section of the page: home, menu and contact.
 - When the page load it shows the content of the home tab, it has a head, a paragraph with a short description of the restaurant, and an image.
 - Tab Menu shows the list of food offered by the restaurant.
