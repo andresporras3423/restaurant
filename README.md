@@ -23,7 +23,7 @@ Second JavaScript Microverse Project By Oscar Russi
 
 # Live demo
 
-[Live Demo](https://andresporras3423.github.io/library/index.html)
+[Live Demo](https://andresporras3423.github.io/restaurant/dist/index.html)
 
 # How to run this project
 
