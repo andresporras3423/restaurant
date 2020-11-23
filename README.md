@@ -12,7 +12,7 @@ Second JavaScript Microverse Project By Oscar Russi
 - When the page load it shows the content of the Home tab, it has a head, a paragraph with a short description of the restaurant, and an image.
 - Tab Menu shows the list of food offered by the restaurant.
 - Tab contact includes a form to send a message to the restaurant.
-- Create a class for the food items.
+- using arrow functions and ECMAScript 6 standard.
 - The project uses Bootstrap for styling.
 
 

@@ -10,7 +10,7 @@ contactLoad().loadDivContact();
 
 let activeIndex = 0;
 
-function updateContent(index) {
+const updateContent = (index) => {
   if (index !== activeIndex) {
     const oldTab = document.getElementById(`tab${activeIndex}`);
     const oldDiv = document.getElementById(`div${activeIndex}`);
@@ -22,13 +22,13 @@ function updateContent(index) {
     newDiv.classList.remove('d-none');
     activeIndex = index;
   }
-}
+};
 
-function addTabClickEvent() {
+const addTabClickEvent = () => {
   const tabs = document.getElementsByClassName('tab-event');
   [...tabs].forEach((tab, index) => {
     tab.onclick = function callUpdateContent() { updateContent(index); };
   });
-}
+};
 
 addTabClickEvent();
